@@ -7,11 +7,11 @@
     // "./rmmv-pixi.d.ts"
   ],
   "include": [
-    "./*",
+    "./*.js",
     "./plugins_dev/*.js",
-    "./plugins/*.js"
+    "./plugins/*.js",
+    "../source/*/*.ts",
   ],
   "exclude": [
-    // "./plugins/*"
   ]
 }

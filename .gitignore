@@ -32,3 +32,6 @@ Yami_SkipTitle.js
 /save
 /img
 /js/libs
+node_modules
+/source/plugin1
+/source/plugin2

@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "sourceMap": true,
+        "skipLibCheck": true,
+    },
+    "include": [
+        "source"
+    ],
+    "exclude": [
+        "**/node_modules/**"
+    ]
+}
