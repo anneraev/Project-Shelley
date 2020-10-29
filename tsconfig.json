@@ -4,8 +4,11 @@
         "sourceMap": true,
         "skipLibCheck": true,
     },
+    "files": [
+        "./def/rmmv.d.ts",
+    ],
     "include": [
-        "source"
+        "source",
     ],
     "exclude": [
         "**/node_modules/**"
