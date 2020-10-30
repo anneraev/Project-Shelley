@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "sourceMap": true,
+        "skipLibCheck": true,
+    },
+    "files": [
+        "./def/rmmv.d.ts",
+    ],
+    "include": [
+        "source",
+    ],
+    "exclude": [
+        "**/node_modules/**"
+    ]
+}

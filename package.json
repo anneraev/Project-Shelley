@@ -10,11 +10,10 @@
         "icon": "icon/icon.png"
     },
     "scripts": {
-        "plugin1-build-linux": "./node_modules/.bin/webpack --config my_plugins/plugin1/webpack.config.js",
-        "plugin1-build": "./node_modules/.bin/webpack.cmd --config my_plugins/plugin1/webpack.config.js",
-        "plugin1-watch": "./node_modules/.bin/webpack.cmd --config my_plugins/plugin1/webpack.config.js --watch",
-        "plugin2-build": "./node_modules/.bin/webpack.cmd --config my_plugins/plugin2/webpack.config.js",
-        "plugin2-watch": "./node_modules/.bin/webpack.cmd --config my_plugins/plugin2/webpack.config.js --watch"
+        "plugin1-build": "./node_modules/.bin/webpack.cmd --config source/plugin1/webpack.config.js",
+        "plugin1-watch": "./node_modules/.bin/webpack.cmd --config source/plugin1/webpack.config.js --watch",
+        "plugin2-build": "./node_modules/.bin/webpack.cmd --config source/plugin2/webpack.config.js",
+        "plugin2-watch": "./node_modules/.bin/webpack.cmd --config source/plugin2/webpack.config.js --watch"
     },
     "devDependencies": {
         "fork-ts-checker-webpack-plugin": "^0.4.9",

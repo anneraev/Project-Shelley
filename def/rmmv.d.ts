@@ -13393,6 +13393,7 @@ declare class Game_Interpreter {
 
     constructor(depth: number);
     checkOverflow(): void;
+    initialize(depth: number): void;
     /**
      * Clears the interpreter.
      * 
