@@ -1,5 +1,10 @@
 {
     "name": "project-shelley",
+    "description": "Development and build for Project Shelley: RPGMaker add-ons designed to increase developer's control over entities in the game and to facilitate a more persistent-state design approach to game worlds.",
+    "repository": {
+        "url": "https://github.com/anneraev/Project-Shelley"
+    },
+    "license": "CC-BY-4.0",
     "main": "index.html",
     "js-flags": "--expose-gc",
     "window": {
@@ -10,17 +15,26 @@
         "icon": "icon/icon.png"
     },
     "scripts": {
+        "test": "jest",
         "plugin1-build": "./node_modules/.bin/webpack.cmd --config source/plugin1/webpack.config.js",
         "plugin1-watch": "./node_modules/.bin/webpack.cmd --config source/plugin1/webpack.config.js --watch",
-        "plugin2-build": "./node_modules/.bin/webpack.cmd --config source/plugin2/webpack.config.js",
-        "plugin2-watch": "./node_modules/.bin/webpack.cmd --config source/plugin2/webpack.config.js --watch"
+        "plugin1-test-build": "npm test && npm run plugin1-build",
+        "plugin1-test-watch": "npm test && npm run plugin1-watch"
     },
     "devDependencies": {
+        "@types/jest": "^26.0.15",
+        "@types/webpack": "^4.41.24",
+        "bufferutil": "^4.0.1",
+        "canvas": "^2.6.1",
         "fork-ts-checker-webpack-plugin": "^0.4.9",
+        "jest": "^26.6.1",
         "rpgmakermv_typescript_dts": "latest",
+        "ts-jest": "^26.4.3",
         "ts-loader": "^5.1.0",
+        "ts-node": "^9.0.0",
         "tslint": "^5.11.0",
-        "typescript": "latest",
+        "typescript": "^3.0.0",
+        "utf-8-validate": "^5.0.2",
         "webpack": "^4.19.0",
         "webpack-cli": "^3.1.0"
     }
