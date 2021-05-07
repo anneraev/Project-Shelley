@@ -1,4 +1,4 @@
-import IEntity from '../interface/IEntity';
+import IEntity from './IEntity';
 
 /**
  * Represents the central repository of all Entities and the functions that manipulate them.
