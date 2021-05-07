@@ -19,7 +19,9 @@
         "plugin1-build": "./node_modules/.bin/webpack.cmd --config source/plugin1/webpack.config.js",
         "plugin1-watch": "./node_modules/.bin/webpack.cmd --config source/plugin1/webpack.config.js --watch",
         "plugin1-test-build": "npm test && npm run plugin1-build",
-        "plugin1-test-watch": "npm test && npm run plugin1-watch"
+        "plugin1-test-watch": "npm test && npm run plugin1-watch",
+        "ars-entity-lib-build": "./node_modules/.bin/webpack.cmd --config source/ars-entity-lib/webpack.config.js",
+        "ars-entity-lib-watch": "./node_modules/.bin/webpack.cmd --config source/ars-entity-lib/webpack.config.js --watch"
     },
     "devDependencies": {
         "@types/jest": "^26.0.15",
