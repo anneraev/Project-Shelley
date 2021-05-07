@@ -11,14 +11,8 @@ const banner = `
 //=============================================================================
 
 /*:
-@plugindesc Plugin to manage the waifu talks.
-@author Your name
-
-@param param1
-@desc param1 description
-@default 0
-
-@help This plugin does not provide plugin commands.
+@libraryDesc A layer that stores and manages entities.
+@author An Rae Vick
 `
 
 module.exports = {
