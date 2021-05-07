@@ -8,8 +8,6 @@
   "include": [
     "./*.js",
     "./plugins/*.js",
-    "../source/*/*.ts",
-    "../source/*/*.js"
 ],
   "exclude": [
 ]
