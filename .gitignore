@@ -24,6 +24,12 @@ MadeWithMV.js
 mv3d.js
 mv3d.js.map
 Yami_SkipTitle.js
+AltSaveScreen.js
+EnemyBook.js
+ItemBook.js
+SimpleMsgSideView.js
+TitleCommandPosition.js
+WeaponSkill.js
 /audio
 /fonts
 /icon
@@ -32,4 +38,5 @@ Yami_SkipTitle.js
 /save
 /img
 /js/libs
+/source/js/libs
 node_modules
