@@ -1,8 +1,8 @@
 /// <reference types="rpgmakermv_typescript_dts" />
 
-import IEntity_Layer from './interface/IEntity_Layer';
+import IEntityLayer from '../interface/IEntityLayer';
 
-const entityLayer: IEntity_Layer = 
+const entityLayer: IEntityLayer = 
 {
     entities: [],
 }
