@@ -1,7 +1,8 @@
-export default class Condition<T> {
-    readonly c_name: string;
-    readonly id: string;
-    value: T;
-    comparison: string;
-    condition: T;
+export default class Condition {
+    constructor(condition: string | number) {
+        this.condition = condition;
+    }
+    condition: string | number;
+    operator: ">"|"<"|"="|"!="|">="|"<="
+    requirement: string | number
 }
