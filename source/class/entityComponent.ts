@@ -9,7 +9,7 @@ export default class EntityComponent<P> {
     constructor (props: P, entity: Entity<unknown>) {
         this.props = props;
         this.entity = entity;
-        this.type = typeof props;
+        this.type = Object.prototype.toString.call(props);
     }
 
     /**

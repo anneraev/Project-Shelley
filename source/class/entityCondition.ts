@@ -5,7 +5,7 @@
  * @param {string | number} requirement The set value the current value is compared against.
  */
 export default class EntityCondition {
-    constructor(value: string | number, requirement: string | number, operator: ">"|"<"|"="|"!="|">="|"<="|"includes"|"!include"|"inclded_in"|"!included_in") {
+    constructor (value: string | number, requirement: string | number, operator: ">" | "<" | "=" | "!=" | ">=" | "<=" | "includes" | "!include" | "inclded_in" | "!included_in") {
         this.value = value;
     }
     /**
@@ -15,9 +15,9 @@ export default class EntityCondition {
     /**
      * Indicates the operation to be performed in the evaluation.
      */
-    operator: ">"|"<"|"="|"!="|">="|"<="|"includes"|"!include"|"inclded_in"|"!included_in"
+    operator: ">" | "<" | "=" | "!=" | ">=" | "<=" | "includes" | "!include" | "inclded_in" | "!included_in";
     /**
      * The set value the current value is compared against.
      */
-    requirement: string | number
+    requirement: string | number;
 }
