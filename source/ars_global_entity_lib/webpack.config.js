@@ -11,15 +11,21 @@ const banner = `
 //=============================================================================
 
 /*:
-@libraryDesc A layer that stores and manages entities.
-@author An Rae Vick
-`
+@plugindesc Library for global game entity system.
+@author Your name
+
+@param param1
+@desc param1 description
+@default 0
+
+@help This plugin does not provide plugin commands.
+`;
 
 module.exports = {
     entry: [path.resolve(__dirname, './main.ts')],
     output: {
         filename: `${pluginName}.js`,
-        path: path.resolve(__dirname, "../../js/libs/"),
+        path: path.resolve(__dirname, "../../js/plugins/"),
     },
     devtool: 'inline-source-map',
     mode: "development",

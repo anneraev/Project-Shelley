@@ -1,11 +1,11 @@
-import Condition from "./entityCondition";
+import { EntityCondition } from "./entityCondition";
 
 /**
  * Represents a collection of properties and conditions derrived from component objects to conceptualize a single ingame entity and
  * its children.
  * @param {P} props The object which contains the properties derrived from component objects.
  */
-export default class Entity<P> {
+export class Entity<P> {
    constructor (props: P) {
       this.props = props;
       this.type = Object.prototype.toString.call(props);
@@ -18,7 +18,7 @@ export default class Entity<P> {
    /**
    * Represents collection of factors used to determine the context.
    */
-   conditions: Condition[];
+   conditions: EntityCondition[];
    /**
   * Represents the type of entity, determined by the name of the Props object.
   */

@@ -4,14 +4,16 @@
  * @param {string | number} value The current value being compared against the set value.
  * @param {string | number} requirement The set value the current value is compared against.
  */
-export default class EntityCondition {
-    constructor (value: string | number, requirement: string | number, operator: ">" | "<" | "=" | "!=" | ">=" | "<=" | "includes" | "!include" | "inclded_in" | "!included_in") {
-        this.value = value;
+export class EntityCondition {
+    constructor (valueFunction: () => string | number, requirement: string | number, operator: ">" | "<" | "=" | "!=" | ">=" | "<=" | "includes" | "!include" | "inclded_in" | "!included_in") {
+        this.valueFunction = valueFunction;
+        this.requirement = requirement;
+        this.operator = operator;
     }
     /**
-     * The current value being compared against the set value.
+     * A function that returns a value (either a string or number).
      */
-    value: string | number;
+    valueFunction: () => string | number;
     /**
      * Indicates the operation to be performed in the evaluation.
      */
